@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "roadai-web",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["--yes", "http-server", "build/web", "-p", "5757", "-c-1", "--silent"],
+      "port": 5757
+    }
+  ]
+}

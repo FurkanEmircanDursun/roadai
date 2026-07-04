@@ -1,0 +1,59 @@
+name: roadai
+description: "RoadAI - Yol Ofkesi Analizoru ve Sakinlestirici Asistan"
+publish_to: 'none'
+version: 2.0.1+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  provider: ^6.1.2
+  camera: ^0.11.0
+  google_mlkit_face_detection: ^0.13.0
+  audioplayers: ^6.1.0
+  flutter_tts: ^4.2.0
+  geolocator: ^13.0.1
+  record: ^6.0.0
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  google_fonts: ^6.2.1
+  wakelock_plus: ^1.2.8
+  url_launcher: ^6.3.0
+  intl: any
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.1
+  flutter_native_splash: ^2.4.1
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/icon.png"
+  adaptive_icon_background: "#0B1426"
+  adaptive_icon_foreground: "assets/icon/icon_foreground.png"
+  remove_alpha_ios: true
+  web:
+    generate: true
+    image_path: "assets/icon/icon.png"
+    background_color: "#070B14"
+    theme_color: "#38E0C8"
+
+flutter_native_splash:
+  color: "#070B14"
+  image: assets/icon/icon_foreground.png
+  android_12:
+    color: "#070B14"
+    image: assets/icon/icon_foreground.png
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/audio/
